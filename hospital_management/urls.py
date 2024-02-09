@@ -17,6 +17,8 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, include
 from django.views.decorators.csrf import csrf_exempt
+from django.conf.urls.static import static
+from django.conf import settings
 from graphene_django.views import GraphQLView
 
 urlpatterns = [
@@ -24,3 +26,5 @@ urlpatterns = [
     path('', include('core.urls')),
     path('graphql', csrf_exempt(GraphQLView.as_view(graphiql=True))),
 ]
+
+urlpatterns + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
