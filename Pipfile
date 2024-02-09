@@ -9,6 +9,7 @@ python-dotenv = "*"
 django-compressor = "*"
 graphene = "*"
 graphene-django = "*"
+gunicorn = "*"
 
 [dev-packages]
 
