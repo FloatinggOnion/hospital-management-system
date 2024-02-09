@@ -18,6 +18,11 @@ python manage.py migrate
 python manage.py runserver
 ```
 
+#### Endpoints
+`/` - Landing page of the website
+`/hospitals` - View list of hospitals in database
+`/graphql` - Access GraphQL UI for database interactions
+
 - For the frontend, run </br>
 ```npx tailwindcss -i ./static/src/input.css -o ./static/src/output.css --watch```
 
