@@ -10,6 +10,7 @@ django-compressor = "*"
 graphene = "*"
 graphene-django = "*"
 gunicorn = "*"
+whitenoise = "*"
 
 [dev-packages]
 
